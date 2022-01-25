@@ -7,10 +7,10 @@
 Clone this repo and then copy the color scheme files to `~/.config/tilix/schemes`:
 
 ```
-git clone https://gitlab.com/drkrynstrng/base2tone-tilix
-cd base2tone-tilix/schemes
+git clone --depth 1 https://gitlab.com/drkrynstrng/base2tone-tilix
 mkdir -p ~/.config/tilix/schemes
-cp *.json ~/.config/tilix/schemes
+cp base2tone-tilix/schemes/*.json ~/.config/tilix/schemes
+rm -r base2tone-tilix
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Finally, switch your terminal to this profile by using the drop down menu from t
 Terminal title > Profiles
 ```
 
-You can also set this profile as the default profile in `Preferences`.
+You can also set this profile as the default profile in `Preferences`. Use the drop down menu next to the profile name and select `Use for new terminals`.
 
 ## License
 
